@@ -1,0 +1,29 @@
+# Function to update specific destinations in the list
+def update_destinations(destinations, index, new_destination):
+    destinations[index] = new_destination
+
+# Ask the user to input 5 travel destinations
+print("Please enter 5 travel destinations:")
+destinations = []
+for i in range(5):
+    destination = input(f"Enter destination {i + 1}: ")
+    destinations.append(destination)
+
+# Display the initial list of destinations
+print("\nYour initial travel destinations are:")
+print(destinations)
+
+# Update the second and fifth destinations
+print("\nNow, let's update the second and fifth destinations.")
+    
+# Update the second destination (index 1)
+second_dest = input("Enter the new second destination: ")
+update_destinations(destinations, 1, second_dest)
+
+# Update the fifth destination (index 4)
+fifth_dest = input("Enter the new fifth destination: ")
+update_destinations(destinations, 4, fifth_dest)
+
+# Display the updated list of destinations
+print("\nYour updated travel destinations are:")
+print(destinations)
